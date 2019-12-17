@@ -17,5 +17,11 @@ module MywebappApi
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.api_only = true
+    config.generators do |g|
+      g.test_framework  nil
+      g.view_specs      false
+      g.helper_specs    false
+      g.orm :active_record, primary_key_type: :uuid
+    end
   end
 end
