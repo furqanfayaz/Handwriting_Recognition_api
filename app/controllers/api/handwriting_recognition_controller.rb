@@ -20,8 +20,4 @@ class Api::HandwritingRecognitionController < ApplicationController
   def upload_params
     params.permit(:url)
   end
-
-  def params
-    params.permit(:id)
-  end
 end
