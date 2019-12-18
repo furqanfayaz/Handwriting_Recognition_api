@@ -1,18 +1,13 @@
 class Api::HandwritingRecognitionController < ApplicationController
   before_action :set_service
 
-  def upload
-    response = @service.upload(upload_params)
-    render json: response
-  end
-
-  def detail
-    response = @service.get_detail(params)
-    render json: response
-  end
-
   def index
     response = @service.get_all(params)
+    render json: response
+  end
+
+  def upload
+    response = @service.upload(upload_params)
     render json: response
   end
 
