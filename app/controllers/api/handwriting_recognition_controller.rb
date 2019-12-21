@@ -7,7 +7,7 @@ class Api::HandwritingRecognitionController < ApplicationController
   end
 
   def upload
-    response = @service.upload(upload_params)
+    response = @service.upload(params)
     render json: response
   end
 
@@ -15,9 +15,5 @@ class Api::HandwritingRecognitionController < ApplicationController
 
   def set_service
     @service ||= ::HandwritingRecognitionService
-  end
-
-  def upload_params
-    params.permit(:url)
   end
 end
