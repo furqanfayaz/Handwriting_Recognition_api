@@ -27,7 +27,6 @@ class HandwritingRecognitionService
       text: text
     }
     image = ImageDetail.create!(create_params)
-    byebug
     return {
       success: true,
       data: image.as_json(ImageDetail.as_json_query)
