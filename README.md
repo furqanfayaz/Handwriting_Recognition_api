@@ -1,24 +1,15 @@
 # README
+###Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ 1. Ruby version atleast 2.4  `Follow these steps to install ruby using rvm, http://railsapps.github.io/installrubyonrails-       mac.html`
 
-Things you may want to cover:
+ 2. Install Rails 5.0.7  `gem install rails -v 5`
 
-* Ruby version
+ 3. Install Postgresql  `brew install postgres`
 
-* System dependencies
+###Installation
+ 1. Clone the repo. Use the command `git clone https://github.com/furqanfayaz/mywebapp_api`
+ 2. Install dependencies using  `cd mywebapp_api && run bundle install`
+ 3. Run server using `rails s`
+ 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
